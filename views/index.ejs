@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Viola Blog | creativity at its peak</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <%-include('partials/links') %> 
+</head>
+<body>
+    <%-include('partials/Navbar') %> 
+
+    <% for( let index = 0; index < data.length; index++ ) { %>
+      <article>
+        <h3>Author:</h3>
+        <p><%=data[index].author %> </p>
+        <h1><%=data[index].title %> </h1>
+        <hr>
+        <p  class="post"><%=data[index].post %></p>
+        <div style="margin-top: 30px;">
+          <a href="/<%=data[index].title %>">Read Post</a>
+        </div>
+        
+      </article>
+    <% } %>
+      
+    
+
+
+
+      <%-include('partials/Footer') %> 
+    <script src="../js/index.js"></script>
+</body>
+</html>

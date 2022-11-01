@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(113, 110, 110);
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+article{
+    padding: 30px;
+    border: solid white 2px;
+    box-shadow: 0px 4px 2px rgba(128, 128, 128, 0.127);
+    border-radius: 10px;
+    margin-top: 10px ;
+    
+}
+.post{
+  
+    height: 70px;
+    overflow: hidden;
+    
+}

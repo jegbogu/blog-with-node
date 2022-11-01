@@ -1,0 +1,13 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+article{
+    width: 60%;
+}
+aside{
+   width: 30%;
+   margin-top: 100px;
+
+}

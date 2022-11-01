@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" ../css/post.css">
+     
+    <%-include('partials/links') %> 
+</head>
+<body>
+    <%-include('partials/Navbar') %> 
+<main>
+
+   
+    <article>
+        <h3>Author:</h3>
+        <p><%=all[1][0].author%> </p>
+        <h1><%=all[1][0].title%> </h1>
+        <hr>
+        <p><%=all[1][0].post%></p>
+         
+      </article>
+      <aside>
+        <h3>Recent Post</h3>
+        <%for( let index = 0; index <all[0].length; index++ ) { %>
+            <article>
+         <h6>  <a href="/<%= all[0][index].title%>"><%=all[0] [index].title%> </a></h6>
+            </article>
+          <% } %>
+      </aside>
+
+</main>
+    <%-include('partials/Footer') %> 
+</body>
+</html>
